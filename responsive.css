@@ -1,0 +1,109 @@
+@media screen and (max-width: 830px) {
+  table {
+    font-size: .8rem;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+  .res-header {
+    font-size: 7.00 rem;
+  }
+
+  .res-content {
+    font-size: .55rem;
+  }
+
+  .col-md-8 {
+    width: 100%;
+  }
+
+  .col-md-2 {
+    width: 100%;
+  }
+
+  .col-md-6 {
+    width: 100%;
+  }
+
+  /* table responsive */
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  tr td {
+    font-style: normal;
+    font-weight: 500;
+  }
+
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+
+  tbody th {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .9em;
+    text-align: right;
+  }
+
+  tbody th::after {
+    content: attr(data-label);
+    float: left;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  table td::before {
+    /*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        */
+    content: attr(data-label);
+    float: left;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .btn-res {
+    font-size: 13px !important;
+    display: block;
+  }
+
+  .res-table-food {
+    font-weight: 700;
+  }
+
+  .height-50 {
+    height: auto;
+  }
+  .res-margin {
+    margin-top: 30px;
+  }
+  .margin-top-neg {
+    margin-top: 0;
+  }
+  .res-float {
+    justify-content: flex-start;
+  }
+
+}

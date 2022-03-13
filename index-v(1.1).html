@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <article>
+        <navbar>
+            <div class="container-lg h-25 d-flex justify-content-between align-items-center">
+                <!-- logo  -->
+                <div class="">
+                    <img class="" src="logo.jpg" alt="" srcset="">
+                </div>
+                <!-- center content  -->
+                <div class="">
+                    <h4 class="">CREATE MEAL PLAN</h4>
+                </div>
+
+                <!-- right item  -->
+                <div class="page-right">
+                    <p>
+                        Chriss Connell <i class="fa-solid fa-chevron-right margin-left text-black"></i>
+                    </p>
+                </div>
+            </div>
+        </navbar>
+        <!-- body start  -->
+
+        <section>
+            <div class="container-lg d-flex flex-wrap justify-content-around">
+
+                <!-- middle content  -->
+                <div class="col-md-8   d-flex flex-column justify-content-center align-item-center ">
+                    <div class="d-flex justify-content-between pt-5">
+
+                        <h6 class="margin-left"> <label class="fw-bold" for="">Plan Name :</label> 2500 Meals in Minutes
+                        </h6>
+
+                        <h6 class=""><label class="fw-bold" for="">Start Date :</label> 02/03/2022</h6>
+
+                        <button class="btn bg-info btn-res margin-top-neg"><i
+                                class="fa-solid fa-pen-to-square margin-right text-black"></i>Edit Plan
+                        </button>
+
+                    </div>
+                    <!-- table  -->
+
+                    <div class="pt-5">
+                        <table class="table table-striped table-fonts-normal">
+                            <thead class="th-head-bg">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Calories</th>
+                                    <th scope="col">Carbs</th>
+                                    <th scope="col">Fat</th>
+                                    <th scope="col">Protein</th>
+                                    <th scope="col">Sodium</th>
+                                    <th scope="col">Suger</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th data-label="#" scope="row">Plan Targets</th>
+                                    <td data-label="Calories">2500 cals</td>
+                                    <td data-label="Carbs">143 g (40%)</td>
+                                    <td data-label="Fat">100 g (30%)</td>
+                                    <td data-label="Protein">123 g (30%)</td>
+                                    <td data-label="Sodium">1000 mg</td>
+                                    <td data-label="Suger">345 mg</td>
+                                </tr>
+                                <tr>
+                                    <th data-label="#" scope="row">Plan Values</th>
+                                    <td data-label="Calories">2500 cals</td>
+                                    <td data-label="Carbs">141 g (39%)</td>
+                                    <td data-label="Fat">105 g (31%)</td>
+                                    <td data-label="Protein">123 g (30%)</td>
+                                    <td data-label="Sodium">2000 mg</td>
+                                    <td data-label="Suger">1000 mg</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- main table  -->
+
+                    <!-- days button  -->
+                    <div class=" d-flex flex-wrap  pt-5">
+                        <ul class="list-unstyled d-flex flex-wrap">
+                            <li class="cursor-pointer margin-bottom" href="#day-1"><a
+                                    class="p-sm-sp  text-decoration-none  fw-bold font-style hover-text-effect">day-1</a>
+                            </li>
+                            <li class="cursor-pointer margin-bottom" href="#day-1"><a
+                                    class="p-sm-sp border-left text-decoration-none  fw-bold font-style hover-text-effect">day-2</a>
+                            </li>
+                            <li class="cursor-pointer margin-bottom" href="#day-1"><a
+                                    class="p-sm-sp border-left text-decoration-none  fw-bold font-style hover-text-effect">day-3</a>
+                            </li>
+                            <li class="cursor-pointer margin-bottom" href="#day-1"><a
+                                    class="p-sm-sp border-left text-decoration-none  fw-bold font-style hover-text-effect">day-4</a>
+                            </li>
+                            <li class="cursor-pointer margin-bottom" href="#day-1"><a
+                                    class="p-sm-sp border-left text-decoration-none  fw-bold font-style hover-text-effect">day-5</a>
+                            </li>
+                            <li class="cursor-pointer margin-bottom" href="#day-1"><a
+                                    class="p-sm-sp border-left text-decoration-none  fw-bold font-style hover-text-effect">day-6</a>
+                            </li>
+                            <li class="cursor-pointer margin-bottom" href="#day-1"><a
+                                    class="p-sm-sp border-left text-decoration-none  fw-bold font-style hover-text-effect">day-7</a>
+                            </li>
+                            
+
+
+
+                        </ul>
+                        <ul class="list-unstyled d-flex">
+                            <li class="cursor-pointer btn-width  margin-left-2" href="#add-1"><a
+                                class="p-sm-sp text-decoration-none fw-bold  hover-text-effect"><i
+                                    class="fa-solid fa-plus   margin-right"></i>Add day</a></li>
+
+                        <li class="cursor-pointer margin-left-2 margin-top-neg " onclick="openNav()" href="#menu"><a
+                                class="text-decoration-none fw-bold"><i
+                                    class="fa-solid fa-ellipsis-vertical fs-4 icon-focus-effect icon-color-effect p-sm-2"></i></a>
+                        </li>
+                        </ul>
+
+
+
+                    </div>
+
+
+                    <!-- days button end  -->
+
+
+
+                    <div class=" pt-5">
+                        <!-- breakfast  -->
+                        <table class="table table-striped table-fonts-normal">
+                            <thead class="th-head-bg">
+                                <tr>
+                                    <th scope="col">Breakfast 7:00 AM<i
+                                            class="fa-solid fa-circle text-warning margin-left"></i></th>
+                                    <th scope="col">Quentity</th>
+                                    <th scope="col">Calories</th>
+                                    <th scope="col">Carbs</th>
+                                    <th scope="col">Fat</th>
+                                    <th scope="col">Protein</th>
+                                    <th scope="col">Sodium</th>
+                                    <th scope="col">Suger</th>
+                                    <th class="th-borderless" scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="res-table-food" data-label="Breakfast 7:00 AM" scope="col">Apple</th>
+                                    <td data-label="Quentity">1 large</td>
+                                    <td data-label="Calories">100 cals</td>
+                                    <td data-label="Carbs">10 g</td>
+                                    <td data-label="Fat">2 g</td>
+                                    <td data-label="Protein">4 g</td>
+                                    <td data-label="Sodium">100 mg</td>
+                                    <td data-label="Suger">57 mg</td>
+                                    <td data-label=""><i class="fa-regular cng-icon fa-heart"></i></td>
+
+                                </tr>
+                                <tr>
+                                    <th class="res-table-food" data-label="Breakfast 7:00 AM" scope="col">Oatmeal</th>
+                                    <td data-label="Quentity">1 cup</td>
+                                    <td data-label="Calories">200 cals</td>
+                                    <td data-label="Carbs">30 g</td>
+                                    <td data-label="Fat">7 g</td>
+                                    <td data-label="Protein">6 g</td>
+                                    <td data-label="Sodium">347 mg</td>
+                                    <td data-label="Suger">10 mg</td>
+                                    <td data-label=""><i class="fa-regular cng-icon fa-heart"></i></td>
+                                </tr>
+                                <!-- add food  -->
+
+                            </tbody>
+                            <tfoot class="border-primary">
+                                <th class="td-borderless" scope="row"><a href="" class="text-decoration-none"
+                                        onclick="openNav()">Add Food</a>|<a class="text-decoration-none" href="">More
+                                        Actions</a>
+                                </th>
+                                <td class="td-borderless" data-label="Quentity">1 Item</td>
+                                <td class="td-borderless" data-label="Calories">200 cals</td>
+                                <td class="td-borderless" data-label="Carbs">30 g</td>
+                                <td class="td-borderless" data-label="Fat">7 g</td>
+                                <td class="td-borderless" data-label="Protein">6 g</td>
+                                <td class="td-borderless" data-label="Sodium">347 mg</td>
+                                <td class="td-borderless" data-label="Suger">10 mg</td>
+                            </tfoot>
+
+
+                        </table>
+                        <!-- Snack -->
+                        <table class="table margin-top-1 table-striped table-fonts-normal">
+                            <thead class="th-head-bg">
+                                <tr>
+                                    <th scope="col">Snack 10:00 AM</th>
+                                    <th scope="col">Quentity</th>
+                                    <th scope="col">Calories</th>
+                                    <th scope="col">Carbs</th>
+                                    <th scope="col">Fat</th>
+                                    <th scope="col">Protein</th>
+                                    <th scope="col">Sodium</th>
+                                    <th scope="col">Suger</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="res-table-food" data-label="Snack 10:00 AM" scope="col">Luna Bar -
+                                        Chocolate</th>
+                                    <td data-label="Quentity">1 bar</td>
+                                    <td data-label="Calories">220 cals</td>
+                                    <td data-label="Carbs">11 g</td>
+                                    <td data-label="Fat">5 g</td>
+                                    <td data-label="Protein">20 g</td>
+                                    <td data-label="Sodium">330 mg</td>
+                                    <td data-label="Suger">77 mg</td>
+                                    <td data-label=""><i class="fa-regular cng-icon fa-heart"></i></td>
+
+                                </tr>
+                                <!-- add food  -->
+
+                            </tbody>
+                            <tfoot class="border-primary">
+                                <th class="td-borderless" scope="row"><a href="" onclick="openNav()">Add Food</a>|<a
+                                        href="">More Actions</a>
+                                </th>
+                                <td class="td-borderless" data-label="Quentity">1 Item</td>
+                                <td class="td-borderless" data-label="Calories">220 cals</td>
+                                <td class="td-borderless" data-label="Carbs">11 g</td>
+                                <td class="td-borderless" data-label="Fat">5 g</td>
+                                <td class="td-borderless" data-label="Protein">20 g</td>
+                                <td class="td-borderless" data-label="Sodium">330 mg</td>
+                                <td class="td-borderless" data-label="Suger">77 mg</td>
+                            </tfoot>
+
+
+                        </table>
+                        <!-- lunch  -->
+                        <table class="table margin-top-1 table-striped table-fonts-normal">
+                            <thead class="th-head-bg">
+                                <tr>
+                                    <th scope="col">Lunch 12:00 PM</th>
+                                    <th scope="col">Quentity</th>
+                                    <th scope="col">Calories</th>
+                                    <th scope="col">Carbs</th>
+                                    <th scope="col">Fat</th>
+                                    <th scope="col">Protein</th>
+                                    <th scope="col">Sodium</th>
+                                    <th scope="col">Suger</th>
+                                    <th class="th-borderless" scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="res-table-food" data-label="Lunch 12:00 PM" scope="col"><i
+                                            class="fa-solid fa-book-open margin-right text-info"></i>Turkey Sandwich
+                                    </th>
+                                    <td data-label="Quentity">1 serving</td>
+                                    <td data-label="Calories">300 cals</td>
+                                    <td data-label="Carbs">20 g</td>
+                                    <td data-label="Fat">32 g</td>
+                                    <td data-label="Protein">10 g</td>
+                                    <td data-label="Sodium">350 mg</td>
+                                    <td data-label="Suger">97 mg</td>
+                                    <td data-label=""><i class="fa-regular cng-icon fa-heart"></i></td>
+
+                                </tr>
+                                <tr>
+                                    <th class="res-table-food" data-label="Lunch 12:00 PM" scope="col">Orange</th>
+                                    <td data-label="Quentity">1 large</td>
+                                    <td data-label="Calories">90 cals</td>
+                                    <td data-label="Carbs">5 g</td>
+                                    <td data-label="Fat">2 g</td>
+                                    <td data-label="Protein">7 g</td>
+                                    <td data-label="Sodium">17 mg</td>
+                                    <td data-label="Suger">30 mg</td>
+                                    <td data-label=""><i class="fa-regular cng-icon fa-heart"></i></td>
+                                </tr>
+                                <!-- add food  -->
+
+                            </tbody>
+                            <tfoot class="border-primary">
+                                <th class="td-borderless" scope="row"><a href="" onclick="openNav()">Add Food</a>|<a
+                                        href="">More Actions</a>
+                                </th>
+                                <td class="td-borderless" data-label="Quentity">2 Item</td>
+                                <td class="td-borderless" data-label="Calories">390 cals</td>
+                                <td class="td-borderless" data-label="Carbs">25 g</td>
+                                <td class="td-borderless" data-label="Fat">34 g</td>
+                                <td class="td-borderless" data-label="Protein">17 g</td>
+                                <td class="td-borderless" data-label="Sodium">367 mg</td>
+                                <td class="td-borderless" data-label="Suger">127 mg</td>
+                            </tfoot>
+
+
+                        </table>
+                        <!-- Snack  -->
+                        <table class="table margin-top-1 table-striped table-fonts-normal">
+                            <thead class="th-head-bg">
+                                <tr>
+                                    <th scope="col">Snack 3:00 PM</th>
+                                    <th scope="col">Quentity</th>
+                                    <th scope="col">Calories</th>
+                                    <th scope="col">Carbs</th>
+                                    <th scope="col">Fat</th>
+                                    <th scope="col">Protein</th>
+                                    <th scope="col">Sodium</th>
+                                    <th scope="col">Suger</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Snack 3:00 PM" scope="col"> None</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <!-- add food  -->
+
+                            </tbody>
+                            <tfoot class="border-primary">
+                                <th class="td-borderless" scope="row"><a href="" onclick="openNav()">Add Food</a>|<a
+                                        href="">More Actions</a>
+                                </th>
+                                <td class="td-borderless" class="td-borderless"></td>
+                                <td class="td-borderless" class="td-borderless"></td>
+                                <td class="td-borderless" class="td-borderless"></td>
+                                <td class="td-borderless" class="td-borderless"></td>
+                                <td class="td-borderless" class="td-borderless"></td>
+                                <td class="td-borderless" class="td-borderless"></td>
+                                <td class="td-borderless" class="td-borderless"></td>
+                            </tfoot>
+
+
+                        </table>
+                        <!-- Dinner  -->
+                        <table class="table margin-top-1 table-striped table-fonts-normal">
+                            <thead class="th-head-bg">
+                                <tr>
+                                    <th scope="col">Dinner 6:00 PM</th>
+                                    <th scope="col">Quentity</th>
+                                    <th scope="col">Calories</th>
+                                    <th scope="col">Carbs</th>
+                                    <th scope="col">Fat</th>
+                                    <th scope="col">Protein</th>
+                                    <th scope="col">Sodium</th>
+                                    <th scope="col">Suger</th>
+                                    <th class="th-borderless" scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="res-table-food" data-label="Dinner 6:00 PM" scope="col"><i
+                                            class="fa-solid fa-book-open margin-right text-info"></i> Veggie Pizza</th>
+                                    <td data-label="Quentity">1 serving</td>
+                                    <td data-label="Calories">500 cals</td>
+                                    <td data-label="Carbs">20 g</td>
+                                    <td data-label="Fat">32 g</td>
+                                    <td data-label="Protein">10 g</td>
+                                    <td data-label="Sodium">350 mg</td>
+                                    <td data-label="Suger">97 mg</td>
+                                    <td data-label=""><i class="fa-regular cng-icon fa-heart"></i></td>
+
+                                </tr>
+                                <tr>
+                                    <th class="res-table-food" data-label="Dinner 6:00 PM" scope="col">milk</th>
+                                    <td data-label="Quentity">1 cup</td>
+                                    <td data-label="Calories">120 cals</td>
+                                    <td data-label="Carbs">5 g</td>
+                                    <td data-label="Fat">2 g</td>
+                                    <td data-label="Protein">7 g</td>
+                                    <td data-label="Sodium">17 mg</td>
+                                    <td data-label="Suger">30 mg</td>
+                                    <td data-label=""><i class="fa-regular cng-icon fa-heart"></i></td>
+
+                                </tr>
+                                <tr>
+                                    <th class="res-table-food" data-label="Breakfast 7:00 AM" scope="col">Carrots</th>
+                                    <td data-label="Quentity">2 large</td>
+                                    <td data-label="Calories">20 cals</td>
+                                    <td data-label="Carbs">5 g</td>
+                                    <td data-label="Fat">2 g</td>
+                                    <td data-label="Protein">7 g</td>
+                                    <td data-label="Sodium">17 mg</td>
+                                    <td data-label="Suger">30 mg</td>
+                                    <td data-label=""><i class="fa-regular cng-icon fa-heart"></i></td>
+                                </tr>
+                                <!-- add food  -->
+
+                            </tbody>
+                            <tfoot class="border-primary">
+                                <th class="td-borderless" scope="row"><a href="" onclick="openNav()">Add Food</a>|<a
+                                        href="">More Actions</a>
+                                </th>
+                                <td class="td-borderless" data-label="Quentity" class="td-borderless"> 4 Items</td>
+                                <td class="td-borderless" data-label="Calories" class="td-borderless">690 cals</td>
+                                <td class="td-borderless" data-label="Carbs" class="td-borderless">30 g</td>
+                                <td class="td-borderless" data-label="Fat" class="td-borderless">36 g</td>
+                                <td class="td-borderless" data-label="Protein" class="td-borderless">24 g</td>
+                                <td class="td-borderless" data-label="Sodium" class="td-borderless">384 mg</td>
+                                <td class="td-borderless" data-label="Suger" class="td-borderless">157 mg</td>
+                            </tfoot>
+
+
+                        </table>
+                        <!-- snack -->
+                        <table class="table margin-top-1 table-striped table-fonts-normal">
+                            <thead class="th-head-bg">
+                                <tr>
+                                    <th scope="col">Snack 8:30 PM</th>
+                                    <th scope="col">Quentity</th>
+                                    <th scope="col">Calories</th>
+                                    <th scope="col">Carbs</th>
+                                    <th scope="col">Fat</th>
+                                    <th scope="col">Protein</th>
+                                    <th scope="col">Sodium</th>
+                                    <th scope="col">Suger</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="res-table-food" data-label="Snack 8:30 PM" scope="col">Ice Cream -
+                                        Chocolate</th>
+                                    <td data-label="Quentity">1/2 cup</td>
+                                    <td data-label="Calories">220 cals</td>
+                                    <td data-label="Carbs">11 g</td>
+                                    <td data-label="Fat">5 g</td>
+                                    <td data-label="Protein">20 g</td>
+                                    <td data-label="Sodium">330 mg</td>
+                                    <td data-label="Suger">77 mg</td>
+                                    <td data-label=""><i class="fa-regular cng-icon fa-heart"></i></td>
+
+                                </tr>
+                                <!-- add food  -->
+
+                            </tbody>
+                            <tfoot class="border-primary">
+                                <th class="td-borderless" scope="row"><a href="" onclick="openNav()">Add Food</a>|<a
+                                        href="">More Actions</a>
+                                </th>
+
+                                <td data-label="Quentity " class="td-borderless">1/2 Item</td>
+                                <td data-label="Calories " class="td-borderless">220 cals</td>
+                                <td data-label="Carbs " class="td-borderless">11 g</td>
+                                <td data-label="Fat " class="td-borderless">5 g</td>
+                                <td data-label="Protein " class="td-borderless">20 g</td>
+                                <td data-label="Sodium " class="td-borderless">330 mg</td>
+                                <td data-label="Suger " class="td-borderless">77 mg</td>
+                                <td class="td-borderless"></td>
+                            </tfoot>
+                        </table>
+                    </div>
+
+                    <!-- main table end  -->
+                    <table class="table margin-top-1 table-striped table-fonts-normal">
+
+
+                        <tbody>
+                            <tr>
+                                <th class="td-borderless fw-bold" scope="row">Day Values</th>
+                                <td class="td-borderless fw-bold">2500 cal</td>
+                                <td class="td-borderless fw-bold">141 g(39%)</td>
+                                <td class="td-borderless fw-bold">105 g (31%)</td>
+                                <td class="td-borderless fw-bold">123 g (30%)</td>
+                                <td class="td-borderless fw-bold">2000 mg</td>
+                                <td class="td-borderless fw-bold">1000 mg</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+
+                <!-- right content  -->
+
+
+
+
+
+                <div class="col-md-2 border-left right-item  pt-5 p-2">
+                    <button class="btn bg-info margin-top-neg w-100"><i
+                            class="fa-solid fa-floppy-disk margin-right text-black"></i>Save as
+                        Issue </button>
+                    <br>
+                    <button class="btn bg-info margin-top w-100"><i
+                            class="fa-solid fa-cloud-arrow-down margin-right text-black"></i>Save as
+                        Draft</button>
+                    <br>
+                    <button class="btn bg-info margin-top w-100"><i
+                            class="fa-solid fa-share-from-square text-black"></i>Print/View</button>
+                    <br>
+                    <button class="btn bg-info margin-top w-100"><i
+                            class="fa-solid fa-xmark margin-right text-black"></i>Cancel</button>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <footer>
+
+            <div class="margin-top-1 container-lg h-25 d-flex justify-content-between align-items-center">
+                <!-- logo  -->
+                <div class="">
+                    <img class="" src="logo.jpg" alt="" srcset="" height="50" width="100">
+                </div>
+                <!-- right item  -->
+                <div class="page-right">
+                    <p>
+                        Copyright 2022 ©Total PT Fitness
+                    </p>
+                </div>
+            </div>
+
+        </footer>
+
+
+        <!-- slide form  -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn text-decoration-none" onclick="closeNav()">&times;</a>
+
+
+            <form class="w-100 p-4">
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class="text-color">Demo Title</label>
+                    <input type="text" class="form-control doc-item" placeholder="Demo Title">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class="text-color">Demo Title</label>
+                    <input type="text" class="form-control doc-item" placeholder="Demo">
+                </div>
+                <div class="form-group ">
+                    <label for="exampleInputEmail1" class="text-color">Demo Title</label>
+                    <input type="text" class="form-control doc-item" placeholder="Demo">
+                </div>
+                <div class="form-group ">
+                    <label for="exampleInputEmail1" class="text-color">Demo Title</label>
+                    <input type="text" class="form-control doc-item" placeholder="Demo">
+                </div>
+                <div class="form-group ">
+                    <label for="exampleInputEmail1" class="text-color">Demo Title</label>
+                    <input type="text" class="form-control doc-item" placeholder="Demo">
+                </div>
+                <div class="form-group ">
+                    <label for="exampleInputEmail1" class="text-color">Demo Title</label>
+                    <input type="text" class="form-control doc-item" placeholder="Demo">
+                </div>
+
+
+                <button type="submit" class="btn btn-primary margin-top">Done</button>
+            </form>
+
+
+        </div>
+
+
+
+
+
+    </article>
+
+
+    <!-- page 2  -->
+
+
+    <article class="margin-top-2">
+
+
+
+        <navbar>
+            <div class="container-fluid h-25 d-flex justify-content-between align-items-center">
+                <!-- logo  -->
+                <div class="">
+                    <img class="" src="logo.jpg" alt="" srcset="">
+                </div>
+                <!-- center content  -->
+                <div class="">
+                    <h4 class="">Edit 2500 Calorie Meals In Minutes</h4>
+                </div>
+
+                <!-- right item  -->
+                <div class="page-right">
+                    <p>
+                        Chriss Connell <i class="fa-solid fa-chevron-right margin-left text-black"></i>
+                    </p>
+                </div>
+            </div>
+        </navbar>
+
+
+        <div class="container-lg">
+            <div class="col-md-12  ">
+                <!-- table  -->
+
+                <div class=" pt-5">
+                    <table class="table table-striped table-fonts-normal">
+                        <thead class="th-head-bg">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Calories</th>
+                                <th scope="col">Carbs</th>
+                                <th scope="col">Fat</th>
+                                <th scope="col">Protein</th>
+                                <th scope="col">Sodium</th>
+                                <th scope="col">Suger</th>
+                            </tr>
+                        </thead>
+                        <tbody class="">
+                            <tr>
+                                <th data-label="#" scope="row">Plan Targets</th>
+                                <td data-label="Calories">2500 cals</td>
+                                <td data-label="Carbs">143 g (40%)</td>
+                                <td data-label="Fat">100 g (30%)</td>
+                                <td data-label="Protein">123 g (30%)</td>
+                                <td data-label="Sodium">1000 mg</td>
+                                <td data-label="Suger">345 mg</td>
+                            </tr>
+                            <tr>
+                                <th data-label="#" scope="row">Plan Values</th>
+                                <td data-label="Calories">2500 cals</td>
+                                <td data-label="Carbs">141 g (39%)</td>
+                                <td data-label="Fat">105 g (31%)</td>
+                                <td data-label="Protein">123 g (30%)</td>
+                                <td data-label="Sodium">2000 mg</td>
+                                <td data-label="Suger">1000 mg</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="container-lg margin-top-1 d-flex flex-wrap justify-content-center">
+
+            <!-- form  -->
+
+            <div class="col-md-6 p-sm-2 ">
+                <div class="">
+
+                    <div class="days-button d-flex pt-5">
+                        <ul class="list-unstyled d-flex flex-wrap">
+                            <li class="cursor-pointer " href="#search-1"><a
+                                    class="p-sm-sp  text-decoration-none  fw-bold font-style hover-text-effect">Search</a>
+                            </li>
+                            <li class="cursor-pointer " href="#recent-1"><a
+                                    class="p-sm-sp border-left text-decoration-none  fw-bold font-style hover-text-effect">Recent</a>
+                            </li>
+                            <li class="cursor-pointer " href="#frequent-1"><a
+                                    class="p-sm-sp border-left text-decoration-none  fw-bold font-style hover-text-effect">Frequent</a>
+                            </li>
+                            <li class="cursor-pointer " href="#day-1"><a
+                                    class="p-sm-sp border-left text-decoration-none  fw-bold font-style hover-text-effect">Fevorite</a>
+                            </li>
+                        </ul>
+
+
+
+                    </div>
+                    <div class="margin-top">
+
+                        <div class="form-check form-check-inline">
+                            <input class="check-box" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="" for="inlineCheckbox1">Food</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="check-box" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="" for="inlineCheckbox2">Recipes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="check-box" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="" for="inlineCheckbox2">Meals</label>
+                        </div>
+
+                        <br>
+                        <div class="search pt-4">
+                            <input type="search" placeholder="search food" class="search-box "> <input type="submit"
+                                value="Search" class="search-btn  margin-left">
+                        </div>
+                    </div>
+
+
+
+                    <p class="pt-4"><label class="fw-bold" for="">Food Database : </label> USDA, Australian, BioEx,… <i
+                            class="fa-solid edit-icon icon-focus-effect shadow-effect cursor-pointer fa-pen-to-square margin-right text-black"></i>
+                    </p>
+
+
+
+                    <div class="height-50 border">
+                        <table class="table margin-top table-striped table-font">
+                            <thead class="th-head-bg">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Food Name</th>
+                                    <th scope="col">Quentity</th>
+                                    <th scope="col">Calories</th>
+                                    <th scope="col">Carbs</th>
+                                    <th scope="col">Fat</th>
+                                    <th scope="col">Protein</th>
+                                    <th scope="col">Sodium</th>
+                                    <th scope="col">Suger</th>
+                                    <th class="th-borderless" scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Calories"><i
+                                            class="fa-solid fa-plus add-food btn-res cus-btn margin-right"></i>
+                                    </td>
+                                    <td data-label="Food Name" scope="col">Veggie Pizza</td>
+                                    <td data-label="Quentity">1 serving</td>
+                                    <td data-label="Calories">500 cals</td>
+                                    <td data-label="Carbs">20 g</td>
+                                    <td data-label="Fat">32 g</td>
+                                    <td data-label="Protein">10 g</td>
+                                    <td data-label="Sodium">350 mg</td>
+                                    <td data-label="Suger">97 mg</td>
+                                    <td data-label="Quentity"><i
+                                            class="fa-solid add-food fa-circle-info text-black"></i></td>
+
+                                </tr>
+                                <tr>
+                                    <td data-label="Calories"><i
+                                            class="fa-solid fa-plus add-food btn-res cus-btn margin-right"></i>
+                                    </td>
+                                    <td data-label="Dinner 6:00 PM" scope="col">milk</td>
+                                    <td data-label="Quentity">1 cup</td>
+                                    <td data-label="Calories">120 cals</td>
+                                    <td data-label="Carbs">5 g</td>
+                                    <td data-label="Fat">2 g</td>
+                                    <td data-label="Protein">7 g</td>
+                                    <td data-label="Sodium">17 mg</td>
+                                    <td data-label="Suger">30 mg</td>
+                                    <td data-label="Quentity"><i
+                                            class="fa-solid add-food fa-circle-info text-black"></i></td>
+
+                                </tr>
+                                <tr>
+                                    <td data-label="Calories"><i
+                                            class="fa-solid fa-plus add-food btn-res cus-btn margin-right"></i>
+                                    </td>
+                                    <td data-label="Breakfast 7:00 AM" scope="col">Carrots</td>
+                                    <td data-label="Quentity">2 large</td>
+                                    <td data-label="Calories">20 cals</td>
+                                    <td data-label="Carbs">5 g</td>
+                                    <td data-label="Fat">2 g</td>
+                                    <td data-label="Protein">7 g</td>
+                                    <td data-label="Sodium">17 mg</td>
+                                    <td data-label="Suger">30 mg</td>
+                                    <td data-label="Quentity"><i
+                                            class="fa-solid add-food fa-circle-info text-black"></i></td>
+                                </tr>
+                                <!-- add food  -->
+
+                            </tbody>
+
+
+
+
+                        </table>
+                    </div>
+
+                    <div class="d-flex align-items-end ">
+                        <p class="p-sm-4"> <label class="fw-bold" for=""> Note :</label> List may have hundreds of items
+                        </p>
+                    </div>
+                    <div class="d-flex align-items-end">
+                        <p class="p-sm-4"> <label class="fw-bold" for=""> Note :</label> Click on 1 before large and you
+                            can edit. Click on
+                            large and it is dropdown allowing units to be picked. + only
+                            shows up on the select row.</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <!-- carosol slider  -->
+
+            <div class="col-md-6 p-sm-2 ">
+
+
+
+
+                <div class="w-75 m-auto ">
+
+                    <h2 class="text-center margin-top-3">Day 2</h2>
+                    <div class="d-flex justify-content-between ">
+
+                        <div class="button">
+                            <i data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev"
+                                class="fa-solid fa-chevron-left carosol-font" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="button">
+                            <i aria-hidden="true" class="fa-solid fa-angle-right carosol-font"
+                                data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next"></i>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+                <div class=" height-50 border">
+
+                    <div class="">
+
+                        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="true"
+                            data-bs-interval="false">
+
+                            <div class="carousel-inner width-100">
+
+                                <!-- Breakfast table -->
+                                <div class="carousel-item active ">
+
+
+                                    <h4 class="text-center width-40  ">Breakfast 7:00 AM</h4>
+                                    <table class="table table-font table-striped">
+                                        <thead class="th-head-bg">
+                                            <tr>
+
+                                                <th scope="col"></th>
+                                                <th scope="col">Breakfast 7:00 AM<i
+                                                        class="fa-solid fa-circlee margin-left text-warning"></i></th>
+                                                <th scope="col">Quentity</th>
+                                                <th scope="col">Calories</th>
+                                                <th scope="col">Carbs</th>
+                                                <th scope="col">Fat</th>
+                                                <th scope="col">Protein</th>
+                                                <th scope="col">Sodium</th>
+                                                <th scope="col">Suger</th>
+                                                <th class="th-borderless" scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr id="removeItem">
+                                                <td data-label="Delete form list"><i onclick="removeTable()"
+                                                        class="fa-solid fa-minus add-food"></i></td>
+                                                <td data-label="Breakfast 7:00 AM" scope="col">Apple</td>
+                                                <td data-label="Quentity">1 large</td>
+                                                <td data-label="Calories">100 cals</td>
+                                                <td data-label="Carbs">10 g</td>
+                                                <td data-label="Fat">2 g</td>
+                                                <td data-label="Protein">4 g</td>
+                                                <td data-label="Sodium">100 mg</td>
+                                                <td data-label="Suger">57 mg</td>
+                                                <td data-label=""><i class="fa-regular cng-icon fa-heart"></i></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Delete form list"><i
+                                                        class="fa-solid fa-minus add-food"></i></td>
+                                                <td data-label="Breakfast 7:00 AM" scope="col">Oatmeal</td>
+                                                <td data-label="Quentity">1 cup</td>
+                                                <td data-label="Calories">200 cals</td>
+                                                <td data-label="Carbs">30 g</td>
+                                                <td data-label="Fat">7 g</td>
+                                                <td data-label="Protein">6 g</td>
+                                                <td data-label="Sodium">347 mg</td>
+                                                <td data-label="Suger">10 mg</td>
+                                                <td data-label=""><i class="fa-regular cng-icon fa-heart"></i></td>
+                                            </tr>
+                                            <!-- add food  -->
+
+                                        </tbody>
+
+
+                                    </table>
+
+
+
+                                </div>
+
+                                <!-- snaks table  -->
+                                <div class="carousel-item">
+                                    <h4 class="text-center">Snack 10:00 AM</h4>
+                                    <table class="table table-striped table-font">
+                                        <thead class="th-head-bg">
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col">Snack 10:00 AM</th>
+                                                <th scope="col">Quentity</th>
+                                                <th scope="col">Calories</th>
+                                                <th scope="col">Carbs</th>
+                                                <th scope="col">Fat</th>
+                                                <th scope="col">Protein</th>
+                                                <th scope="col">Sodium</th>
+                                                <th scope="col">Suger</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="Delete form list"><i
+                                                        class="fa-solid fa-minus add-food"></i></td>
+                                                <td data-label="Snack 10:00 AM" scope="col">Luna Bar - Chocolate</td>
+                                                <td data-label="Quentity">1 bar</td>
+                                                <td data-label="Calories">220 cals</td>
+                                                <td data-label="Carbs">11 g</td>
+                                                <td data-label="Fat">5 g</td>
+                                                <td data-label="Protein">20 g</td>
+                                                <td data-label="Sodium">330 mg</td>
+                                                <td data-label="Suger">77 mg</td>
+                                                <td data-label=""><i class="fa-regular cng-icon fa-heart"></i></td>
+
+                                            </tr>
+                                            <!-- add food  -->
+
+                                        </tbody>
+
+
+                                    </table>
+
+                                </div>
+
+                                <!-- lunch table  -->
+                                <div class="carousel-item">
+                                    <h4 class="text-center">Lunch 12:00 PM</h4>
+                                    <table class="table table-striped table-font">
+                                        <thead class="th-head-bg">
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col">Lunch 12:00 PM</th>
+                                                <th scope="col">Quentity</th>
+                                                <th scope="col">Calories</th>
+                                                <th scope="col">Carbs</th>
+                                                <th scope="col">Fat</th>
+                                                <th scope="col">Protein</th>
+                                                <th scope="col">Sodium</th>
+                                                <th scope="col">Suger</th>
+                                                <th class="th-borderless" scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="Delete form list"><i
+                                                        class="fa-solid fa-minus add-food"></i></td>
+                                                <td data-label="Lunch 12:00 PM" scope="col"><i
+                                                        class="fa-solid fa-book-open margin-right text-info"></i>Turkey
+                                                    Sandwich
+                                                </td>
+                                                <td data-label="Quentity">1 serving</td>
+                                                <td data-label="Calories">300 cals</td>
+                                                <td data-label="Carbs">20 g</td>
+                                                <td data-label="Fat">32 g</td>
+                                                <td data-label="Protein">10 g</td>
+                                                <td data-label="Sodium">350 mg</td>
+                                                <td data-label="Suger">97 mg</td>
+                                                <td data-label=""><i class="fa-regular cng-icon fa-heart"></i></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Delete form list"><i
+                                                        class="fa-solid fa-minus add-food"></i></td>
+                                                <td data-label="Lunch 12:00 PM" scope="col">Orange</td>
+                                                <td data-label="Quentity">1 large</td>
+                                                <td data-label="Calories">90 cals</td>
+                                                <td data-label="Carbs">5 g</td>
+                                                <td data-label="Fat">2 g</td>
+                                                <td data-label="Protein">7 g</td>
+                                                <td data-label="Sodium">17 mg</td>
+                                                <td data-label="Suger">30 mg</td>
+                                                <td data-label=""><i class="fa-regular cng-icon fa-heart"></i></td>
+                                            </tr>
+                                            <!-- add food  -->
+
+                                        </tbody>
+
+
+                                    </table>
+
+                                </div>
+
+                                <!-- snaks table  -->
+                                <div class="carousel-item">
+                                    <h4 class="text-center">Snack 3:00 PM</h4>
+                                    <table class="table table-striped table-font">
+                                        <thead class="th-head-bg">
+                                            <tr>
+                                                <th scope="col">Snack 3:00 PM</th>
+                                                <th scope="col">Quentity</th>
+                                                <th scope="col">Calories</th>
+                                                <th scope="col">Carbs</th>
+                                                <th scope="col">Fat</th>
+                                                <th scope="col">Protein</th>
+                                                <th scope="col">Sodium</th>
+                                                <th scope="col">Suger</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="Snack 3:00 PM" scope="col"> None</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+
+                                            </tr>
+                                            <!-- add food  -->
+
+                                        </tbody>
+                                    </table>
+
+
+                                </div>
+
+                                <!-- dinner table  -->
+                                <div class="carousel-item">
+                                    <h4 class="text-center">Dinner 6:00 PM</h4>
+                                    <table class="table table-striped table-font">
+                                        <thead class="th-head-bg">
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col">Dinner 6:00 PM</th>
+                                                <th scope="col">Quentity</th>
+                                                <th scope="col">Calories</th>
+                                                <th scope="col">Carbs</th>
+                                                <th scope="col">Fat</th>
+                                                <th scope="col">Protein</th>
+                                                <th scope="col">Sodium</th>
+                                                <th scope="col">Suger</th>
+                                                <th class="th-borderless" scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="Delete form list"><i
+                                                        class="fa-solid fa-minus add-food"></i></td>
+                                                <td data-label="Dinner 6:00 PM" scope="col"><i
+                                                        class="fa-solid fa-book-open margin-right text-info"></i> Veggie
+                                                    Pizza</td>
+                                                <td data-label="Quentity">1 serving</td>
+                                                <td data-label="Calories">500 cals</td>
+                                                <td data-label="Carbs">20 g</td>
+                                                <td data-label="Fat">32 g</td>
+                                                <td data-label="Protein">10 g</td>
+                                                <td data-label="Sodium">350 mg</td>
+                                                <td data-label="Suger">97 mg</td>
+                                                <td data-label=""><i class="fa-regular cng-icon fa-heart"></i></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Delete form list"><i
+                                                        class="fa-solid fa-minus add-food"></i></td>
+                                                <td data-label="Dinner 6:00 PM" scope="col">milk</td>
+                                                <td data-label="Quentity">1 cup</td>
+                                                <td data-label="Calories">120 cals</td>
+                                                <td data-label="Carbs">5 g</td>
+                                                <td data-label="Fat">2 g</td>
+                                                <td data-label="Protein">7 g</td>
+                                                <td data-label="Sodium">17 mg</td>
+                                                <td data-label="Suger">30 mg</td>
+                                                <td data-label=""><i class="fa-regular cng-icon fa-heart"></i></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Delete form list"><i
+                                                        class="fa-solid fa-minus add-food"></i></td>
+                                                <td data-label="Breakfast 7:00 AM" scope="col">Carrots</td>
+                                                <td data-label="Quentity">2 large</td>
+                                                <td data-label="Calories">20 cals</td>
+                                                <td data-label="Carbs">5 g</td>
+                                                <td data-label="Fat">2 g</td>
+                                                <td data-label="Protein">7 g</td>
+                                                <td data-label="Sodium">17 mg</td>
+                                                <td data-label="Suger">30 mg</td>
+                                                <td data-label=""><i class="fa-regular cng-icon fa-heart"></i></td>
+                                            </tr>
+                                            <!-- add food  -->
+
+                                        </tbody>
+
+                                    </table>
+
+                                </div>
+
+                                <!-- snaks table  -->
+                                <div class="carousel-item">
+                                    <h4 class="text-center">Snack 8:30 PM</h4>
+                                    <table class="table table-striped table-font">
+                                        <thead class="th-head-bg">
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col">Snack 8:30 PM</th>
+                                                <th scope="col">Quentity</th>
+                                                <th scope="col">Calories</th>
+                                                <th scope="col">Carbs</th>
+                                                <th scope="col">Fat</th>
+                                                <th scope="col">Protein</th>
+                                                <th scope="col">Sodium</th>
+                                                <th scope="col">Suger</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="Delete form list"><i
+                                                        class="fa-solid fa-minus add-food"></i></td>
+                                                <td data-label="Snack 8:30 PM" scope="col">Ice Cream - Chocolate</td>
+                                                <td data-label="Quentity">1/2 cup</td>
+                                                <td data-label="Calories">220 cals</td>
+                                                <td data-label="Carbs">11 g</td>
+                                                <td data-label="Fat">5 g</td>
+                                                <td data-label="Protein">20 g</td>
+                                                <td data-label="Sodium">330 mg</td>
+                                                <td data-label="Suger">77 mg</td>
+                                                <td data-label=""><i class="fa-regular cng-icon fa-heart"></i></td>
+
+                                            </tr>
+                                            <!-- add food  -->
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+
+
+
+
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="d-flex align-items-end">
+                    <p class="p-sm-4"> <label class="fw-bold" for=""> Note:</label> Minus only show
+                        up on selected row. Click on 1 before large and you can edit.
+                        Click on large and you it is dropdown allowing units to be picked. Drag and
+                        Drop
+                        reorders food.</p>
+                </div>
+
+                <!-- day value  -->
+                <table class="table margin-top-1 table-striped table-font">
+                    <thead class="th-head-bg">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Calories</th>
+                            <th scope="col">Carbs</th>
+                            <th scope="col">Fat</th>
+                            <th scope="col">Protein</th>
+                            <th scope="col">Sodium</th>
+                            <th scope="col">Suger</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th class="td-borderless fw-bold" scope="row">Meal Values</th>
+                            <td class="td-borderless fw-bold">323 cal</td>
+                            <td class="td-borderless fw-bold">20 g</td>
+                            <td class="td-borderless fw-bold">4 g </td>
+                            <td class="td-borderless fw-bold">8 g</td>
+                            <td class="td-borderless fw-bold">200 mg</td>
+                            <td class="td-borderless fw-bold">114 mg</td>
+                        </tr>
+
+                        <tr>
+                            <th class="td-borderless fw-bold" scope="row">Day Values</th>
+                            <td class="td-borderless fw-bold">2490 cal</td>
+                            <td class="td-borderless fw-bold">123 g(40%)</td>
+                            <td class="td-borderless fw-bold">100 g (30%)</td>
+                            <td class="td-borderless fw-bold">100 g (30%)</td>
+                            <td class="td-borderless fw-bold">2560 mg</td>
+                            <td class="td-borderless fw-bold">3000 mg</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+
+
+                <!-- meal value  -->
+
+                <div class="d-flex justify-content-between pt-4">
+                    <button class="end-btn w-25">Cancel</button>
+                    <button class="end-btn w-25">Save</button>
+                </div>
+
+
+            </div>
+
+
+
+            <!-- carosol slider en -->
+
+        </div>
+        <footer>
+
+            <div class="margin-top-1 container-lg h-25 d-flex justify-content-between align-items-center">
+                <!-- logo  -->
+                <div class="">
+                    <img class="" src="logo.jpg" alt="" srcset="" height="50" width="100">
+                </div>
+                <!-- right item  -->
+                <div class="page-right">
+                    <p>
+                        Copyright 2022 ©Total PT Fitness
+                    </p>
+                </div>
+            </div>
+
+        </footer>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </article>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "50%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+
+
+        // heart icon 
+        const icons = document.querySelectorAll(".cng-icon")
+
+
+        for (const icon of icons) {
+            icon.addEventListener('click', function (event) {
+                icon.classList.toggle("fa-solid");
+                icon.classList.toggle("active");
+            })
+        }
+
+
+        function removeTable() {
+            document.getElementById("removeItem").style.display = "none";
+        }
+    </script>
+</body>
+</body>
+
+</html>
